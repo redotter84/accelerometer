@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Accelerometer Demo</title>
+        <script src="script.js"></script>
+        <style>
+#acl-result {
+    height: 300px;
+    width: 90vw;
+}
+        </style>
+    </head>
+    <body>
+        <h1>Accelerometer Demo</h1>
+        <div id="acl-demo">
+            <button class="acl-button" id="acl-recording-btn">
+                Start recording
+            </button>
+            <ul id="acl-data">
+                <li class="acl-axis">
+                    <span class="acl-axis-caption">
+                        X-axis:
+                    </span>
+                    <span class="acl-axis-value" id="acl-axis-x">
+                        0
+                    </span>
+                </li>
+                <li class="acl-axis">
+                    <span class="acl-axis-caption">
+                        Y-axis:
+                    </span>
+                    <span class="acl-axis-value" id="acl-axis-y">
+                        0
+                    </span>
+                </li>
+                <li class="acl-axis">
+                    <span class="acl-axis-caption">
+                        Z-axis:
+                    </span>
+                    <span class="acl-axis-value" id="acl-axis-z">
+                        0
+                    </span>
+                </li>
+                <li class="acl-axis">
+                    <span class="acl-axis-caption">
+                        Interval
+                    </span>
+                    <span class="acl-axis-value" id="acl-interval">
+                        0
+                    </span>
+                </li>
+            </ul>
+            <button class="acl-button" id="acl-export-btn">
+                Export data
+            </button>
+            <div class="acl-result-wrapper">
+                <textarea id="acl-result"></textarea>
+            </div>
+        </div>
+    </body>
+</html>
